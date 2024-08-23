@@ -5,6 +5,9 @@
 }
 
 :root {
+    /* cores */
+    font-size: 62.5%;
+
     --brand-color: #EF5F4C;
     --background-color: #FFFFFF;
     --surface-color: #F5F5F5;
@@ -12,6 +15,14 @@
     --shape-transparency: #ffffff8f;
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
+
+    /* fontes */
+    --font-family: "Poppins", sans-serif;
+    --text-lg: bold 3.2rem/1.25 var(--font-family);
+    --text: 1.6rem/1.5 var(--font-family);
+    --text-md: 1.4rem/1.7 var(--font-family);
+    --text-rodape: 1.4rem/1.5 var(--font-family);
+    --text-sm: 1.2rem/1.7 var(--font-family);
 }
 
 body {
