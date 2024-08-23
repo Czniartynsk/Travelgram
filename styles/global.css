@@ -26,8 +26,7 @@
 }
 
 body {
-  font-size: 1.6rem;
-
+  font: var(--text);
   color: var(--text-color-secondary);
   background-color: var(--background-color);
 }
@@ -40,6 +39,10 @@ body {
   padding-inline: 3.2rem;
   max-width: 128rem;
   margin-inline: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
