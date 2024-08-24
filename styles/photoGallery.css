@@ -1,0 +1,15 @@
+main {
+  /* Estava colocando espaços entre as imagens*/
+    font: 0px/1 var(--font-family);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+    padding-block: 2.4rem;
+}
+
+main img {
+  width: 28.6rem;
+  height: 28.6rem;
+  object-fit: cover;
+}
