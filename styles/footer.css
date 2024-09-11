@@ -1,10 +1,27 @@
 footer {
-  display: flex;
-  font: var(--text-rodape);
-  padding-block: 2.4rem;
-  gap: 2.4rem;
+  padding: 1.6rem;
+  text-align: center;
+
+  & > span {
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  & > div {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: space-between;
+  }
 }
 
-footer span:nth-child(1) {
-  margin-right: auto;
+@media (width >= 36em) {
+  footer {
+    display: flex;
+    padding-block: 2.4rem;
+    padding-inline: 3.2rem;
+  }
+  
+  footer span:nth-child(1) {
+    margin-right: auto;
+  }
 }

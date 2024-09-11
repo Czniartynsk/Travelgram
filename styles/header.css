@@ -1,47 +1,64 @@
-header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding-block: 3.2rem;
-    font: var(--text-md);
-}
-
 #profile {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 3.2rem;
+  column-gap: 3.2rem;
+  padding-block: 3.2rem;
 }
 
 #profile > div {
   max-width: 38.4rem;
+  margin-right: auto;
 }
 
 #profile img {
-  width: 17.6rem;
+  width: 12rem;
   border-radius: 50%;
 }
 
 h1 {
   font: var(--text-lg);
   color: var(--text-color-primary);
+  margin-top: 1.6rem;
   margin-bottom: 0.8rem;
 }
 
 #info {
-  display: flex;
-  flex-direction: column;
+  margin-top: 3.2rem;
+  display: grid;
   gap: 1.6rem;
-
-  width: 28rem;
-  line-height: 0;
 }
 
 #info li {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  &:nth-child(1) span {
+    background: url(../assets/icons/MapPin.svg) no-repeat;
+    padding-left: 3.2rem;
+  }
+  &:nth-child(2) span {
+    background: url(../assets/icons/AirplaneTilt.svg) no-repeat;
+    padding-left: 3.2rem;
+  }
+  &:nth-child(3) span {
+    background: url(../assets/icons/Image.svg) no-repeat;
+    padding-left: 3.2rem;
+  }
 }
 
-#info li a {
-    line-height: 0;
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 36em) {
+  .desktop-only {
+    display: initial;
+  }
+
+  #profile {
+    justify-content: space-between;
+    column-gap: 3.2rem;
+  }
+
+  #profile img {
+    width: 17.6rem;
+  }
 }

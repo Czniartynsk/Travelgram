@@ -18,7 +18,7 @@
 
   /* fontes */
   --font-family: "Poppins", sans-serif;
-  --text-lg: bold 3.2rem/1.25 var(--font-family);
+  --text-lg: bold 2.4rem/1.25 var(--font-family);
   --text: 1.6rem/1.5 var(--font-family);
   --text-md: 1.4rem/1.7 var(--font-family);
   --text-rodape: 1.4rem/1.5 var(--font-family);
@@ -53,4 +53,10 @@ a {
 a:hover {
   color: var(--brand-color);
   text-decoration: underline;
+}
+
+@media (width >= 36em) {
+  :root {
+    --text-lg: bold 3.2rem/1.25 var(--font-family);
+  }
 }

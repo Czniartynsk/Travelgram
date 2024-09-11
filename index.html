@@ -31,8 +31,8 @@
             </a>
           </li>
 
-          <li><a href="#">Explorar</a></li>
-          <li><a href="#">Minhas viagens</a></li>
+          <li class="desktop-only"><a href="#">Explorar</a></li>
+          <li class="desktop-only"><a href="#">Minhas viagens</a></li>
           <li>
             <a href="#">
               <img
@@ -60,22 +60,20 @@
               cidade de São Paulo. 🏙️📸
             </p>
           </div>
+
+          <ul id="info">
+            <li>
+              <span>Goiás, Brazil</span>
+            </li>
+            <li>
+              <span>37 Países</span>
+            </li>
+            <li>
+              <span>240 fotos</span>
+            </li>
+          </ul>
         </div>
 
-        <ul id="info">
-          <li>
-            <img src="./assets/icons/MapPin.svg" alt="Pingo de localização" />
-            <span>Goiás, Brazil</span>
-          </li>
-          <li>
-            <img src="./assets/icons/AirplaneTilt.svg" alt="Ícone de Avião" />
-            <span>37 Países</span>
-          </li>
-          <li>
-            <img src="./assets/icons/Image.svg" alt="Ícone de foto" />
-            <span>240 fotos</span>
-          </li>
-        </ul>
       </header>
     </div>
 
@@ -96,8 +94,10 @@
 
     <footer class="container">
       <span>Travelgram &copy; 2024</span>
-      <span>Termos de uso</span>
-      <span>Política de privacidade</span>
+      <div>
+        <span>Termos de uso</span>
+        <span>Política de privacidade</span>
+      </div>
     </footer>
   </body>
 </html>
